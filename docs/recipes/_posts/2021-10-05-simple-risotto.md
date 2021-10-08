@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: post
 title: "Simple risotto"
+tags: italian rice vegetarian
 ---
 
 A very simple risotto.
