@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: recipe
 title: "Simple risotto"
 tags: italian rice vegetarian
+author: Guiii
 ---
 
 A very simple risotto.
