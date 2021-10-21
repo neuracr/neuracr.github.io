@@ -1,19 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
+</head>
+
+<body>
+  <div class=container>
+    <div id="sitetitle">{{site.title}}</div>
     <nav>
-      <a href="/">Home</a>
-      <a href="/recipes/">Recipes</a>
-      <a href="/about">About</a>
+      <ul id="navlinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/recipes/">Recipes</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
     </nav>
-      {{ content }}
+    <!-- <div>margin left</div> -->
+    <div id="content">{{content}}</div>
+    <!-- <div>margin right</div> -->
     <footer>
       &copy; to me
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>

@@ -1,0 +1,5 @@
+<ol>
+    {% for ingredient in include.ingredients %}
+    <li>{{ingredient.quantity}} - {{ingredient.name}}</li>
+    {% endfor %}
+</ol>
