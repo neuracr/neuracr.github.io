@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+  --color1: #DBD5A0;
+  --color2: #ACD9C6;
+  --color3: #DBD7AF;
+  --color4: #A79ADB;
+  --bgcolor: #ececec;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: grid;
     height: 100vh;
@@ -12,13 +28,15 @@
 
 #sitetitle{
     grid-area: sitetitle;
-    background-color: aquamarine;
+    background-color: var(--color4);
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: xx-large;
 }
 
 nav{
     grid-area: nav;
-    background-color: beige;
+    background-color: var(--color2);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -27,12 +45,12 @@ nav{
 
 #content{
     grid-area: content;
-    background-color: blanchedalmond;
+    background-color: var(--bgcolor);
 }
 
 footer{
     grid-area: footer;
-    background-color: crimson;
+    background-color: var(--color4);
 }
 
 #navlinks{
