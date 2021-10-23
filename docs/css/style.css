@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Permanent+Marker&display=swap');
-
 :root {
-  --color1: #DBD5A0;
-  --color2: #ACD9C6;
-  --color3: #DBD7AF;
-  --color4: #A79ADB;
-  --bgcolor: #ececec;
+    --color1: #DBD5A0;
+    --color2: #ACD9C6;
+    --color3: #DBD7AF;
+    --color4: #A79ADB;
+    --bgcolor: #ececec;
 }
 
 * {
@@ -13,6 +12,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Libre Franklin', sans-serif;
+    list-style-type: none;
 }
 
 .container {
@@ -20,14 +20,10 @@
     height: 100vh;
     grid-template-columns: 1fr 800px 1fr;
     grid-template-rows: 50px 40px 1fr 60px;
-    grid-template-areas: 
-    "sitetitle sitetitle sitetitle"
-    "nav nav nav"
-    "leftmargin content rightmargin"
-    "footer footer footer";
+    grid-template-areas: "sitetitle sitetitle sitetitle" "nav nav nav" "leftmargin content rightmargin" "footer footer footer";
 }
 
-#sitetitle{
+#sitetitle {
     grid-area: sitetitle;
     background-color: var(--color4);
     text-align: center;
@@ -36,7 +32,7 @@
     color: white;
 }
 
-nav{
+nav {
     grid-area: nav;
     background-color: var(--color2);
     display: flex;
@@ -45,21 +41,51 @@ nav{
     /* padding: 30px 10% */
 }
 
-#content{
+#content {
     grid-area: content;
     background-color: var(--bgcolor);
 }
 
-footer{
+footer {
     grid-area: footer;
     background-color: var(--color4);
 }
 
-#navlinks{
+#navlinks {
     list-style: none;
 }
 
-#navlinks li{
+#navlinks li {
     display: inline-block;
     padding: 0px 20px
+}
+
+#latest-recipes {
+    columns: 2; 
+    column-gap: 0px;
+    /* margin: 10px; */
+    display: inline-block;
+
+}
+
+.recipe-preview-tile {
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.recipe-preview-tile img {
+    max-height:100%; max-width:100%;
+    border-radius: 12px;
+}
+
+.recipe-preview-tile .tile-title {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    font-weight: bold;
+
 }

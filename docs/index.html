@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h2>Latest posts</h2>
+<ul id="latest-recipes">
+    {% for post in site.posts %}
+    <li>
+        <div class="recipe-preview-tile">
+            <img src="{{post.preview_picture}}" alt="recipe tile preview picture">
+            <a href="{{post.url}}" class="tile-title">{{post.title}}</a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>

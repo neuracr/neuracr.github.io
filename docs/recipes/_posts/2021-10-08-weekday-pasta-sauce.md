@@ -1,7 +1,7 @@
 ---
 layout: recipe
-title: "weekday pasta sauce"
 tags: italian pasta tomato quick
+title: "weekday pasta sauce"
 author: Guiiii
 preview_picture: /assets/images/simple_pasta.jpg
 ---
