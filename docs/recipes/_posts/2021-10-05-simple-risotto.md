@@ -21,8 +21,7 @@ ingredients:
         - name: dry white wine
 ---
 
-A very simple risotto.
-
+<h1>A very simple risotto</h1>
 ## Instructions
 
 1. Cut the onions in thin and rather small pieces

@@ -87,5 +87,6 @@ footer {
     left: 16px;
     color: white;
     font-weight: bold;
-
+    background-color: black;
+    padding: 7px;
 }
