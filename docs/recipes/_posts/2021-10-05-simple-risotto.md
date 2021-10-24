@@ -4,19 +4,24 @@ title: "Simple risotto"
 tags: italian rice vegetarian
 author: Guiii
 preview_picture: "/assets/images/simple_pasta.jpg"
+ingredients:
+    servings: 4
+    list:
+        - name: rice
+          quantity: 350
+          unit: g
+        - name: broth
+          quantity: 2
+          unit: cube(s)
+        - name: onion
+          quantity: 2
+          unit: 
+        - name: olive oil
+        - name: parmigiano regiano
+        - name: dry white wine
 ---
 
 A very simple risotto.
-
-## Ingredients
-
-For 4 persons:
- -  350g of risotto rice
- -  2 cubes of broth
- -  2 onions
- -  Some olive oil
- -  Parmigiano regiano
- -  Some dry white wine
 
 ## Instructions
 
