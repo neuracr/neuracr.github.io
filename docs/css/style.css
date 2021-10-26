@@ -153,3 +153,16 @@ footer {
   margin-left: -1em;
   padding-left: 30px;
 }
+
+#recipe-content {
+    padding-bottom: 50px;
+}
+
+.recipe-instructions ol li{
+    list-style-type: numbers;
+    padding-bottom: 10px;
+}
+
+.recipe-instructions ol {
+    padding: 20px;
+}
