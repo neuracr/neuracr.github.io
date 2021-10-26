@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<h1>{{page.title}}</h1>
-<p>{{ page.date }} - Written by {{ page.author }}</p>
+<h1>{{page.title | capitalize }}</h1>
+<p>{{ page.date | date: '%B %d, %Y' }} - Written by {{ page.author }}</p>
 <img src="{{ page.preview_picture }}" alt="recipe preview picture">
 <h2>Ingredients</h2>
 <section id="ingredient-list">
@@ -20,6 +20,7 @@ layout: default
         {% endfor %}
     </ul>
 </section>
+<br>
 <section>
     {{content}}
 </section>

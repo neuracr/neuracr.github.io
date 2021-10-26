@@ -15,13 +15,17 @@ ingredients:
           unit: cube(s)
         - name: onion
           quantity: 2
-          unit: 
         - name: olive oil
         - name: parmigiano regiano
         - name: dry white wine
+# This helps Jekyll find the excerpt for the recipe. This excerpt can then be showed in the recipe list.
+excerpt_separator: <!--end excerpt-->
+
 ---
 
-<h1>A very simple risotto</h1>
+The most simple yet delicious risotto.
+<!--end excerpt-->
+
 ## Instructions
 
 1. Cut the onions in thin and rather small pieces

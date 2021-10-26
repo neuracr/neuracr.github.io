@@ -2,13 +2,15 @@
 layout: default
 ---
 
-<h2>Latest posts</h2>
+<h1>Latest posts</h2>
 <ul id="latest-recipes">
     {% for post in site.posts %}
     <li>
         <div class="recipe-preview-tile">
-            <img src="{{post.preview_picture}}" alt="recipe tile preview picture">
-            <a href="{{post.url}}" class="tile-title">{{post.title}}</a>
+            <a href="{{post.url}}"><img src="{{post.preview_picture}}" alt="recipe tile preview picture">
+            <div class="tile-title-shadow">{{post.title}}</div>
+            <div class="tile-title">{{post.title}}</div>
+            </a>
         </div>
     </li>
     {% endfor %}

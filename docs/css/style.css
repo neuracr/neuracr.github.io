@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Franklin:wght@100&display=swap');
 :root {
     --color1: #DBD5A0;
     --color2: #ACD9C6;
     --color3: #DBD7AF;
     --color4: #A79ADB;
-    --bgcolor: #ececec;
+    --bgcolor: #e7e3ff;
 }
 
 * {
@@ -15,40 +15,70 @@
     list-style-type: none;
 }
 
-.container {
+.maincontainer {
     display: grid;
     height: 100vh;
+    background-attachment: fixed;
     grid-template-columns: 1fr 800px 1fr;
-    grid-template-rows: 50px 40px 1fr 60px;
-    grid-template-areas: "sitetitle sitetitle sitetitle" "nav nav nav" "leftmargin content rightmargin" "footer footer footer";
+    grid-template-rows: auto auto 1fr 60px;
+    grid-template-areas: 
+       "sitetitle sitetitle sitetitle"
+       "nav nav nav"
+       "leftmargin content rightmargin"
+       "footer footer footer";
+    /* background-color: var(--bgcolor); */
 }
 
 #sitetitle {
     grid-area: sitetitle;
-    background-color: var(--color4);
+    background-color: white;
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: xx-large;
-    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 60px;
+    color: var(--color4);
+}
+
+h1, h2 {
+    font-family: 'Alfa Slab One';
+    font-weight: normal;
+    margin: 20px;
 }
 
 nav {
     grid-area: nav;
-    background-color: var(--color2);
+    background-color: var(--color4);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    /* padding: 30px 10% */
+    color: white;
+    padding: 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms, color 200ms;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-item a:hover {
+  text-decoration-color: rgb(0, 0, 0);
+  color:rgb(0, 0, 0);
 }
 
 #content {
     grid-area: content;
-    background-color: var(--bgcolor);
+    background-color: white;
 }
 
 footer {
     grid-area: footer;
     background-color: var(--color4);
+    color:white;
 }
 
 #navlinks {
@@ -89,4 +119,37 @@ footer {
     font-weight: bold;
     background-color: black;
     padding: 7px;
+    transition: bottom 300ms, left 300ms;
+}
+
+.recipe-preview-tile .tile-title-shadow {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: var(--color4);
+    font-weight: bold;
+    background-color: var(--color4);
+    padding: 7px;
+}
+
+.recipe-preview-tile .tile-title:hover {
+    bottom: 15px;
+    left: 23px;
+}
+
+#ingredient-list {
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--color2);
+    border-radius: 50px;
+}
+
+#ingredient-list li::before {
+  content: "\2022";
+  color: var(--color4);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  padding-left: 30px;
 }
