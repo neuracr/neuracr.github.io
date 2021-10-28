@@ -156,7 +156,7 @@ footer {
     display: inline-block;
     margin: 5px 5px;
     padding: 8px 6px;
-    border-radius: 120px;
+    border-radius: 8%;
 }
 #ingredient-list {
     padding: 15px;

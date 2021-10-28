@@ -5,8 +5,8 @@ layout: base
 <hr>    
 <p>{{ page.date | date: '%B %d, %Y' }} - Written by {{ page.author }}</p>
 <ul id="recipe-tags">
-    {% for tag in site.tags %}
-    <li>{{tag[0]}}</p>
+    {% for tag in page.tags %}
+    <li>{{tag}}</p>
     {% endfor %}
 </ul>
 <img id="recipe-main-picture" src="{{ page.preview_picture }}" alt="recipe preview picture">
