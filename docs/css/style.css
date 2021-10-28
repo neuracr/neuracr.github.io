@@ -145,6 +145,18 @@ footer {
     left: 23px;
 }
 
+#recipe-tags {
+
+}
+
+#recipe-tags li {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 3px;
+}
 #ingredient-list {
     padding: 15px;
     margin: 10px;

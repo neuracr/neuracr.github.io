@@ -4,6 +4,11 @@ layout: base
 <h1>{{page.title | capitalize }}</h1>
 <hr>    
 <p>{{ page.date | date: '%B %d, %Y' }} - Written by {{ page.author }}</p>
+<ul id="recipe-tags">
+    {% for tag in site.tags %}
+    <li>{{tag[0]}}</p>
+    {% endfor %}
+</ul>
 <img id="recipe-main-picture" src="{{ page.preview_picture }}" alt="recipe preview picture">
 <h2>Ingredients</h2>
 <section id="ingredient-list">
