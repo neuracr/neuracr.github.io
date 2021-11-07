@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Franklin:wght@100&display=swap');
+@import url("home_page.css");
+@import url("recipe_page.css");
+
 :root {
     --color1: #DBD5A0;
     --color2: #ACD9C6;
@@ -96,100 +99,4 @@ footer {
 #navlinks li {
     display: inline-block;
     padding: 0px 20px
-}
-
-#latest-recipes {
-    columns: 2; 
-    column-gap: 0px;
-    /* margin: 10px; */
-    display: inline-block;
-
-}
-
-.recipe-preview-tile {
-    border-radius: 8px;
-    position: relative;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 10px;
-}
-
-.recipe-preview-tile img {
-    max-height:100%; max-width:100%;
-    border-radius: 12px;
-}
-
-.recipe-preview-tile .tile-title {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    color: white;
-    font-weight: bold;
-    background-color: black;
-    padding: 7px;
-    transition: bottom 300ms, left 300ms;
-}
-
-.recipe-preview-tile .tile-title-shadow {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    color: var(--color4);
-    font-weight: bold;
-    background-color: var(--color4);
-    padding: 7px;
-}
-
-.recipe-preview-tile .tile-title:hover {
-    bottom: 15px;
-    left: 23px;
-}
-
-#recipe-tags {
-
-}
-
-#recipe-tags li {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    display: inline-block;
-    margin: 5px 5px;
-    padding: 8px 6px;
-    border-radius: 8%;
-}
-#ingredient-list {
-    padding: 15px;
-    margin: 10px;
-    background-color: var(--color2);
-    border-radius: 50px;
-}
-
-#recipe-main-picture {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-}
-
-#ingredient-list li::before {
-  content: "\2022";
-  color: var(--color4);
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-  padding-left: 30px;
-}
-
-#recipe-content {
-    padding-bottom: 50px;
-}
-
-.recipe-instructions ol li{
-    list-style-type: numbers;
-    padding-bottom: 10px;
-}
-
-.recipe-instructions ol {
-    padding: 20px;
 }
