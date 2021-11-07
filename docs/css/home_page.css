@@ -4,6 +4,14 @@
     display: inline-block;
 }
 
+@media (max-width: 1000px) and (orientation: portrait) {
+    #latest-recipes {
+        columns: 1; 
+        column-gap: 0px;
+        display: inline-block;
+    }
+}
+
 .recipe-preview-tile {
     border-radius: 8px;
     position: relative;
