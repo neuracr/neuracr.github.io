@@ -1,0 +1,45 @@
+.recipe-tag {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 8px 6px;
+    border-radius: 8%;
+}
+
+#recipe-main-picture {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+#ingredient-list {
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--color2);
+    border-radius: 50px;
+}
+
+#ingredient-list li::before {
+  content: "\2022";
+  color: var(--color4);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  padding-left: 30px;
+}
+
+#recipe-content {
+    padding-bottom: 50px;
+}
+
+.recipe-instructions ol {
+    padding: 20px;
+}
+
+.recipe-instructions ol li{
+    list-style-type: numbers;
+    padding-bottom: 10px;
+}
