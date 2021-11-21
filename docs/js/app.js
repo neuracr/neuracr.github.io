@@ -1,5 +1,1 @@
-export function logHello() {
-    console.log('hello world!');
-}
-logHello();
-//# sourceMappingURL=app.js.map
+function o(){console.log("hello world!")}o();export{o as logHello};
