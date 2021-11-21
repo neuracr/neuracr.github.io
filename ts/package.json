@@ -2,13 +2,15 @@
   "name": "cooking_scripts",
   "version": "1.0.0",
   "description": "Transpiles JS client-side scripts for the cooking blog at neuracr.github.io",
-  "main": "index.js",
+  "main": "app.js",
+  "module": "app.js",
+  "type": "module",
   "scripts": {
     "build_dev": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-        "license": "Apache-2.0",
+  "license": "Apache-2.0",
   "devDependencies": {
     "tslint": "^6.1.3",
     "typescript": "^4.5.2"
