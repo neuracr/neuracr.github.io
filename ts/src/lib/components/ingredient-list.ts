@@ -76,9 +76,11 @@ export class IngredientList extends LitElement {
     ingredientslot!: HTMLSlotElement;
 
     updateServings() {
+        if (Number.isNaN(parseInt(this.input.value))) { 
+            return;
+        }
         this.servingNumber = Math.max(1, parseInt(this.input.value));
         this.input.value = "" + this.servingNumber;
-        console.log("Changed the servings for " + this.servingNumber);
 
         const ingredientItems = this.ingredientslot.assignedElements();
         ingredientItems.map(n => {n.setAttribute('currentServings', "" + this.servingNumber)});
