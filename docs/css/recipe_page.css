@@ -21,16 +21,6 @@
     border-radius: 50px;
 }
 
-#ingredient-list li::before {
-  content: "\2022";
-  color: var(--color4);
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-  padding-left: 30px;
-}
-
 #recipe-content {
     padding-bottom: 50px;
 }

@@ -5,7 +5,14 @@
     "target": "es6",
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "./js"
+    "outDir": "./js",
+    "experimentalDecorators": true,
   },
+      "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true
+      },
+    ],
   "lib": ["es6", "DOM", "DOM.iterable"]
 }

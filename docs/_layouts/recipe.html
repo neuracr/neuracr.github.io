@@ -12,19 +12,18 @@ layout: base
 <img id="recipe-main-picture" src="{{ page.preview_picture }}" alt="recipe preview picture">
 <h2>Ingredients</h2>
 <section id="ingredient-list">
-    <ul>
-        {% for ingredient in page.ingredients.list %}
-        <li>
-            {{ingredient.name}}
-            {% if ingredient.quantity %}
-            : {{ingredient.quantity}}
-            {% if ingredient.unit %}
-            {{ingredient.unit}}
+    <ingredient-list servingNumber="{{page.ingredients.servings}}">
+    {% for ingredient in page.ingredients.list %}
+        <ingredient-item
+            name="{{ingredient.name}}"
+            {% if ingredient.quantity %} initialQuantity={{ingredient.quantity}}
+            {% if ingredient.unit %} unit="{{ingredient.unit}}"
             {% endif %}
             {% endif %}
-        </li>
-        {% endfor %}
-    </ul>
+            initialServings="{{page.ingredients.servings}}">
+        </ingredient-item>
+    {% endfor %}
+    </ingredient-list>
 </section>
 <br>
 <hr>
