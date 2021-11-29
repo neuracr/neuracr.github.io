@@ -1,16 +1,13 @@
-// Import rollup plugins
 import resolve from '@rollup/plugin-node-resolve';
 import {terser} from 'rollup-plugin-terser';
 import minifyHTML from 'rollup-plugin-minify-html-literals';
 import summary from 'rollup-plugin-summary';
+import typescript from '@rollup/plugin-typescript';
 
 export default {
   plugins: [
-    // Entry point for application build; can specify a glob to build multiple
-    // HTML files for non-SPA app
-    // html({
-    //   input: 'index.html',
-    // }),
+    // Rollup plugin to compile the ts directly in rollup
+    typescript(),
     // Resolve bare module specifiers to relative paths
     resolve(),
     // Minify HTML template literals
@@ -23,14 +20,11 @@ export default {
     }),
     // Print bundle summary
     summary(),
-    // Optional: copy any static assets to build directory
-    // copy({
-    //   patterns: ['images/**/*'],
-    // }),
   ],
-  input: 'js/app.js',
+  input: 'src/app.ts',
   output: {
-    dir: './bundled',
+    dir: '../js',
+    sourcemap: true,
   },
   preserveEntrySignatures: 'strict',
 };
