@@ -1,0 +1,7 @@
+include:
+  - ts/
+
+exclude:
+  - ts/bundled/
+  - ts/js/
+  - ts/node_modules

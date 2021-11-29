@@ -9,9 +9,9 @@
     "build:watch": "tsc -w",
     "build": "tsc",
     "clean": "rm -rf bundled/* js/*",
-    "release": "npm run clean && npm run build && npm run release:bundle && npm run release:copy",
+    "release-prod": "npm run clean && npm run build && npm run release:bundle && npm run release:copy",
     "release:bundle": "rollup -c",
-    "release:copy": "cp ./bundled/* ../docs/js/",
+    "release:copy": "cp ./bundled/* ../js/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
