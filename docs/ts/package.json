@@ -6,24 +6,22 @@
   "module": "app.js",
   "type": "module",
   "scripts": {
-    "build:watch": "tsc -w",
-    "build": "tsc",
-    "clean": "rm -rf bundled/* js/*",
-    "release": "npm run clean && npm run build && npm run release:bundle && npm run release:copy",
-    "release:bundle": "rollup -c",
-    "release:copy": "cp ./bundled/* ../docs/js/",
+    "build": "rollup -c",
+    "buildnwatch": "rollup -w -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
     "@web/rollup-plugin-copy": "^0.3.0",
     "@web/rollup-plugin-html": "^1.10.1",
     "rollup": "^2.60.1",
     "rollup-plugin-minify-html-literals": "^1.2.6",
     "rollup-plugin-summary": "^1.3.0",
     "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.3.1",
     "tslint": "^6.1.3",
     "typescript": "^4.5.2"
   },

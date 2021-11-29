@@ -5,7 +5,7 @@
     "target": "es6",
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "./js",
+    "outDir": "../js/js",
     "experimentalDecorators": true,
   },
       "plugins": [
