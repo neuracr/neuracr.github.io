@@ -58,14 +58,15 @@ export class IngredientList extends LitElement {
             margin: 0 60px;
         }
 
-        button {
+        button:hover {
+            background-color: #BCBCBC;
+        }
+
+        button, #servinginput {
             border: none;
             font-size: 16px;
-        } 
-
-        #servinginput {
-            border: none;
             text-align:center;
+            outline: none;
         }
 
         #servinginput::-webkit-outer-spin-button,
