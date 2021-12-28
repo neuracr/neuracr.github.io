@@ -21,7 +21,8 @@ Adapted from https://jekyllrb.com/docs/installation/windows/
 1. Download ruby and devkit 2.x.x from https://rubyinstaller.org/downloads/. At the time of writing, this is Ruby+Devkit 2.7.5-1 (x64) 
 2. Install it and keep the `ridk install` box ticked. When asked, install the #3 option in the prompt
 3. clone the repo, move to the `docs/` directory and run `bundle install`. bundle should detect that you are in a ruby directory and install the correct dependencies. 
-4. Test that jekyll is working with `bundle exec jekyll serve --config _config.yml,_config_dev.yml`. This should start the local dev server. Try to nagivate to the shown url to see the blog.
+4. If it fails you might need to run `gem install unf_ext -v '0.0.8' --source 'https://rubygems.org/'` to install a needed library for Ruby.
+5. Test that jekyll is working with `bundle exec jekyll serve --config _config.yml,_config_dev.yml`. This should start the local dev server. Try to nagivate to the shown url to see the blog.
 
 ### Javascript
 
