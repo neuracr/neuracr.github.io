@@ -25,7 +25,7 @@
     border-radius: 12px;
 }
 
-.recipe-preview-tile .tile-title {
+.recipe-preview-tile__title {
     position: absolute;
     bottom: 8px;
     left: 16px;
@@ -36,7 +36,7 @@
     transition: bottom 300ms, left 300ms;
 }
 
-.recipe-preview-tile .tile-title-shadow {
+.recipe-preview-tile__title-shadow {
     position: absolute;
     bottom: 8px;
     left: 16px;
@@ -46,7 +46,7 @@
     padding: 7px;
 }
 
-.recipe-preview-tile .tile-title:hover {
+.recipe-preview-tile__title:hover {
     bottom: 15px;
     left: 23px;
 }

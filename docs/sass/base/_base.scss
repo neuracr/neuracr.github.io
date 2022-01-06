@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    @include main-font-family;
+    list-style-type: none;
+}
+
+h1, h2 {
+    @include title-font-family;
+    font-weight: normal;
+    margin: 20px;
+}
+
+.main {
+    display: grid;
+    height: 100vh;
+    background-attachment: fixed;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-rows: auto auto 1fr 60px;
+    grid-template-areas: 
+       "sitetitle sitetitle sitetitle"
+       "nav nav nav"
+       "leftmargin content rightmargin"
+       "footer footer footer";
+
+    &__title {
+        grid-area: sitetitle;
+        background-color: $light-background-color;
+        text-align: center;
+        @include title-font-family;
+        font-size: 60px;
+        color: $primary-color;
+    }
+
+    &__content {
+        grid-area: content;
+        background-color: $light-background-color;
+    }
+
+    &__footer {
+        grid-area: footer;
+        background-color: $primary-color;
+        color: $light-font-color;
+    }
+}
+

@@ -1,0 +1,16 @@
+// Colors
+$primary-color: #A79ADB;
+$active-color: #ACD9C6;
+$background-color: #E7E3FF;
+$light-background-color: white;
+$font-color: black;
+$light-font-color: white;
+
+// Fonts
+@mixin main-font-family {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+@mixin title-font-family {
+    font-family: 'Alfa Slab One', cursive;
+}
