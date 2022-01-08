@@ -10,7 +10,7 @@
     list-style-type: none;
 }
 
-h1 {
+h1, h2 {
     @include title-font-family;
     font-weight: normal;
     margin: 20px;

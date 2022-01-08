@@ -25,12 +25,10 @@
     }
 
     &__title {
+        @extend %dark-bg-light-color;
         position: absolute;
         bottom: 8px;
         left: 16px;
-        color: white;
-        font-weight: bold;
-        background-color: black;
         padding: 7px;
         transition: bottom 300ms, left 300ms;
 
