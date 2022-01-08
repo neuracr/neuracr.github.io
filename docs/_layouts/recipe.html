@@ -6,12 +6,12 @@ layout: base
 <p>{{ page.date | date: '%B %d, %Y' }} - Written by {{ page.author }}</p>
 <ul class="tag-list">
     {% for tag in page.tags %}
-    <li class="recipe-tag tag-list__element">{{tag}}</p>
+    <li class="tag-list__element">{{tag}}</p>
     {% endfor %}
 </ul>
-<img id="recipe-main-picture" class="image recipe__main-picture" src="{{ page.preview_picture }}" alt="recipe preview picture">
+<img class="image recipe__main-picture" src="{{ page.preview_picture }}" alt="recipe preview picture">
 <h2>Ingredients</h2>
-<section id="ingredient-list" class="recipe__ingredients">
+<section class="recipe__ingredients">
     <ingredient-list servingNumber="{{page.ingredients.servings}}">
     {% for ingredient in page.ingredients.list %}
         <ingredient-item
@@ -28,6 +28,6 @@ layout: base
 <br>
 <hr>
 <br>    
-<section id="recipe-content" class="recipe__instructions">
+<section class="recipe__instructions">
     {{content}}
 </section>
