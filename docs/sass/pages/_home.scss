@@ -1,7 +1,11 @@
 .latest-recipes {
-    columns: 2; 
     column-gap: 0px;
     display: inline-block;
+    columns: 2; 
+    
+    @media (max-width: 1000px) and (orientation: portrait) {
+        columns: 1;
+    }
 }
 
 .recipe-preview-tile {
