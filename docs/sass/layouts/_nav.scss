@@ -1,10 +1,9 @@
 .nav {
     grid-area: nav;
-    background-color: $primary-color;
+    @extend %primary-bg-light-color;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: $light-font-color;
     padding: 10px;
 
     ul {
@@ -21,7 +20,6 @@
         color: $light-font-color;
         font-size: 25px;
         font-weight: 800;
-        text-decoration: underline 0.15em $light-font-color;
         transition: text-decoration-color 300ms, color 200ms;
         padding-left: 20px;
         padding-right: 20px;

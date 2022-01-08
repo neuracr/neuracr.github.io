@@ -1,5 +1,11 @@
 @import 'themes/neuracr_theme';
 
+
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'utils/variables';
+@import 'utils/placeholders';
+
 @import 'base/base';
 
 @import 'components/button';
@@ -12,7 +18,3 @@
 @import 'pages/home';
 @import 'pages/recipe';
 
-
-@import 'utils/functions';
-@import 'utils/mixins';
-@import 'utils/variables';

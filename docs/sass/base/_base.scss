@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Franklin:wght@100&display=swap');
+@import url("home_page.css");
+@import url("recipe_page.css");
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +10,7 @@
     list-style-type: none;
 }
 
-h1, h2 {
+h1 {
     @include title-font-family;
     font-weight: normal;
     margin: 20px;
@@ -40,8 +44,7 @@ h1, h2 {
 
     &__footer {
         grid-area: footer;
-        background-color: $primary-color;
-        color: $light-font-color;
+        @extend %primary-bg-light-color;
     }
 }
 
