@@ -1,6 +1,6 @@
 // Colors
 $primary-color: #A79ADB;
-$active-color: #ACD9C6;
+$accent-color: #ACD9C6;
 $background-color: #E7E3FF;
 $light-background-color: white;
 $dark-background-color: black;
@@ -8,6 +8,7 @@ $font-color: black;
 $light-font-color: white;
 
 // Fonts
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Franklin:wght@100&display=swap');
 @mixin main-font-family {
     font-family: 'Libre Franklin', sans-serif;
 }

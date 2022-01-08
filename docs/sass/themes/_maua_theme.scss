@@ -1,0 +1,18 @@
+// Colors
+$primary-color: #6c584c;
+$accent-color: #adc178;
+$background-color: #adc178;
+$light-background-color: white;
+$dark-background-color: #6c584c;
+$font-color: black;
+$light-font-color: white;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Orelega+One');
+@mixin main-font-family {
+    font-family: 'Roboto';
+}
+
+@mixin title-font-family {
+    font-family: 'Orelega One', sans-serif;
+}
