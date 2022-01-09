@@ -6,7 +6,12 @@
     margin: 0;
     padding: 0;
     @include main-font-family;
+    color: $font-color;
     list-style-type: none;
+}
+
+html {
+    background-color: $background-color;
 }
 
 h1, h2 {
@@ -19,6 +24,7 @@ h1, h2 {
     display: grid;
     height: 100vh;
     background-attachment: fixed;
+    background-color: $background-color;
     grid-template-columns: 1fr 800px 1fr;
     grid-template-rows: auto auto 1fr 60px;
     grid-template-areas: 
@@ -33,7 +39,7 @@ h1, h2 {
         text-align: center;
         @include title-font-family;
         font-size: 60px;
-        color: $primary-color;
+        color: $accent-color;
     }
 
     &__content {

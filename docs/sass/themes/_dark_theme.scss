@@ -1,0 +1,18 @@
+// Colors
+$primary-color: #1a1a1a;
+$accent-color: #696969;
+$background-color: #232323;
+$light-background-color: #232323;
+$dark-background-color: white;
+$font-color: cornsilk;
+$light-font-color: white;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Franklin:wght@100&display=swap');
+@mixin main-font-family {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+@mixin title-font-family {
+    font-family: 'Alfa Slab One', cursive;
+}
