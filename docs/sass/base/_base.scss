@@ -25,8 +25,8 @@ h1, h2 {
     height: 100vh;
     background-attachment: fixed;
     background-color: $background-color;
-    grid-template-columns: 1fr 800px 1fr;
-    grid-template-rows: auto auto 1fr 60px;
+    grid-template-columns: $grid-side-column-width $grid-middle-column-width $grid-side-column-width;
+    grid-template-rows: auto auto 1fr $grid-footer-row-height;
     grid-template-areas: 
        "sitetitle sitetitle sitetitle"
        "nav nav nav"
@@ -50,6 +50,10 @@ h1, h2 {
     &__footer {
         grid-area: footer;
         @extend %primary-bg-light-color;
+        line-height: $grid-footer-row-height;
+        font-size: $font-footer-size;
+        padding-left: ($grid-footer-row-height - $font-footer-size)/2;
+
     }
 }
 

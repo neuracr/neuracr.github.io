@@ -1,8 +1,7 @@
 @import 'themes/neuracr_theme';
-@import 'themes/maua_theme';
 @import 'themes/dark_theme';
 @import 'themes/azgheda_theme';
-@import 'themes/azgheda_theme';
+@import 'themes/maua_theme';
 
 @import 'utils/functions';
 @import 'utils/mixins';
@@ -11,7 +10,7 @@
 
 @import 'base/base';
 
-@import 'components/button';
+@import 'components/anchor';
 @import 'components/input';
 @import 'components/image';
 @import 'components/tag-list';

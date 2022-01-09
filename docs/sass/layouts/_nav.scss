@@ -24,18 +24,12 @@
     }
 
     a {
-        text-decoration: none;
-        color: $light-font-color;
+        @extend .anchor;
         font-size: 25px;
         font-weight: 800;
         transition: text-decoration-color 300ms, color 200ms;
         padding-left: 20px;
         padding-right: 20px;
-
-        &:hover {
-            text-decoration-color: $font-color;
-            color: $font-color;
-        }
     }
 }
 
