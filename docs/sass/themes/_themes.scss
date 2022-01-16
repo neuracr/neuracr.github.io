@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Orelega+One');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Montserrat:wght@500');
 
+$themes-list: 'neuracr', 'dark', 'maua', 'azgheda';
 $themes: (
     'neuracr': (
         'primary-color': #A79ADB,
