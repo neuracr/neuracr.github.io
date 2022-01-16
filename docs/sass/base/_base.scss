@@ -5,17 +5,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    @include main-font-family;
-    color: $font-color;
+    font-family:  getThemeVal('main-font-family');
+    color: getThemeVal('font');
     list-style-type: none;
 }
 
 html {
-    background-color: $background-color;
+    background-color: getThemeVal('background');
 }
 
 h1, h2 {
-    @include title-font-family;
+    font-family: getThemeVal('title-font-family');
     font-weight: normal;
     margin: 20px;
 }
@@ -24,7 +24,7 @@ h1, h2 {
     display: grid;
     height: 100vh;
     background-attachment: fixed;
-    background-color: $background-color;
+    background-color: getThemeVal('background');
     grid-template-columns: $grid-side-column-width $grid-middle-column-width $grid-side-column-width;
     grid-template-rows: auto auto 1fr $grid-footer-row-height;
     grid-template-areas: 
@@ -35,16 +35,16 @@ h1, h2 {
 
     &__title {
         grid-area: sitetitle;
-        background-color: $light-background-color;
+        background-color: getThemeVal('background');
         text-align: center;
-        @include title-font-family;
+        font-family: getThemeVal('title-font-family');
         font-size: 60px;
-        color: $accent-color;
+        color: getThemeVal('accent');
     }
 
     &__content {
         grid-area: content;
-        background-color: $light-background-color;
+        background-color: getThemeVal('background');
     }
 
     &__footer {

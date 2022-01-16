@@ -16,7 +16,7 @@
             &--disabled {
                 @extend .nav-list__item;
                 a {
-                    color: darken($light-font-color, 23%);
+                    color: darken(getThemeVal('light-font'), 23%);
                     pointer-events: none;
                 }
             }

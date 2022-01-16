@@ -24,7 +24,7 @@
         bottom: 8px;
         left: 16px;
         font-weight: bold;
-        background-color: $primary-color;
+        background-color: getThemeVal('primary');
         padding: 7px;
     }
 

@@ -6,7 +6,7 @@
     &__ingredients {
         padding: 15px;
         margin: 10px;
-        background-color: $accent-color;
+        background-color: getThemeVal('accent');
         border-radius: 50px;
     }
 
