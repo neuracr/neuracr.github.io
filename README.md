@@ -30,7 +30,7 @@ Same as for ubuntu (see above)
 
 # Starting the dev servers
 
-- Watch the ts code and rebundle when their is a change: `cd docs/ts && npm buildnwatch`
+- Watch the ts code and rebundle when their is a change: `cd docs/ts && npm run buildnwatch`
 - Jekyll devserver in watch mode `cd docs && bundle exec jekyll serve --config _config.yml,_config_dev.yml`
 - Watch the scss code to compile it instantly to css `cd docs && sass --watch ./sass/main.scss:./generated/css/style.css --style compressed`
 
