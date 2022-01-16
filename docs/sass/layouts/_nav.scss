@@ -17,6 +17,7 @@
                 @extend .nav-list__item;
                 a {
                     color: --font-color;
+                    filter: brightness(0.77);
                     pointer-events: none;
                 }
             }
