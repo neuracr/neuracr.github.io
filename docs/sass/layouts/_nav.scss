@@ -20,6 +20,17 @@
                     pointer-events: none;
                 }
             }
+
+            &--first-right {
+                @extend .nav-list__item;
+                position: absolute;
+                right: 160px;
+            }
+
+            &--second-right {
+                position: absolute;
+                right: 0;
+            }
         }
     }
 
