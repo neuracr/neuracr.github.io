@@ -2,50 +2,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Orelega+One');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Montserrat:wght@500');
 
-$scopedTheme: 'maua';
 $themes: (
     'neuracr': (
-        'primary': #A79ADB,
-        'accent': #ACD9C6,
-        'background': white,
-        'dark-background': black,
-        'font': black,
-        'light-font': white,
+        'primary-color': #A79ADB,
+        'accent-color': #ACD9C6,
+        'background-color': white,
+        'dark-background-color': black,
+        'font-color': black,
+        'light-font-color': white,
         'main-font-family': ('Libre Franklin', sans-serif),
         'title-font-family': ('Alfa Slab One', cursive)
     ),
     'dark': (
-        'primary': #1a1a1a,
-        'accent': #696969,
-        'background': #232323,
-        'dark-background': #232323,
-        'font': cornsilk,
-        'light-font': white,
+        'primary-color': #1a1a1a,
+        'accent-color': #696969,
+        'background-color': #232323,
+        'dark-background-color': #232323,
+        'font-color': cornsilk,
+        'font-font-color': white,
         'main-font-family': ('Libre Franklin', sans-serif),
         'title-font-family': ('Alfa Slab One', cursive)
     ),
     'maua': (
-        'primary': #6c584c,
-        'accent': #adc178,
-        'background': white,
-        'dark-background': #6c584c,
-        'font': black,
-        'light-font': white,
+        'primary-color': #6c584c,
+        'accent-color': #adc178,
+        'background-color': white,
+        'dark-background-color': #6c584c,
+        'font-color': black,
+        'light-font-color': white,
         'main-font-family': ('Roboto'),
         'title-font-family': ('Orelega One', sans-serif)
     ),
     'azgheda': (
-        'primary': rgb(1, 0, 53),
-        'accent': #4D4D4D,
-        'background': white,
-        'dark-background': rgb(233, 4, 30),
-        'font': black,
-        'light-font': white,
+        'primary-color': rgb(1, 0, 53),
+        'accent-color': #4D4D4D,
+        'background-color': white,
+        'dark-background-color': rgb(233, 4, 30),
+        'font-color': black,
+        'light-font-color': white,
         'main-font-family': ('Source Sans Pro', sans-serif),
         'title-font-family': ('Montserrat', sans-serif)
     )
 );
+$defaultTheme: 'neuracr';
 
-@function getThemeVal($themeVar) {
-    @return map-get(map-get($themes, $scopedTheme), $themeVar);
-}
+:root {
+    // Creating the global css variables and setting default values to neuracr values
+    @each $theme-var, $theme-value in map-get($themes, $defaultTheme) {
+        --#{$theme-var}: #{$theme-value}; 
+    }
+    
+    // Creating all the themes variables
+    @each $theme-name, $theme in $themes {
+        @each $theme-var, $theme-value in $theme {
+            --#{$theme-name}-#{$theme-var}: #{$theme-value}; 
+        }
+    }
+};

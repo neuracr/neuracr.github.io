@@ -6,6 +6,7 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{site.baseurl}}/generated/css/style.css">
   <script type="module" src="{{site.baseurl}}/js/app.js"></script>
+  <script type="text/javascript" src="{{site.baseurl}}/js/theme.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <li class="nav-list__item"><a href="/">Home</a></li>
         <li class="nav-list__item--disabled"><a href="/recipes/">Recipes</a></li>
         <li class="nav-list__item"><a href="/about">About</a></li>
-        <li class="nav-list__item--first-right"><a>Theme</a></li>
+        <li class="nav-list__item--first-right" onclick="switchTheme()"><a>Theme</a></li>
         <li class="nav-list__item--disabled nav-list__item--second-right"><a>Language</a></li>
       </ul>
     </nav>

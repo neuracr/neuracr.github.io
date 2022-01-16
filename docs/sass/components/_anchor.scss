@@ -1,9 +1,9 @@
 .anchor {
-    color: getThemeVal('light-font');
+    color: var(--light-font-color);
     text-decoration: none;
     
     &:hover {
-        text-decoration-color: getThemeVal('font');
-        color: getThemeVal('font');
+        text-decoration-color: var(--font-color);
+        color: var(--font-color);
     }
 }

@@ -16,13 +16,14 @@
             &--disabled {
                 @extend .nav-list__item;
                 a {
-                    color: darken(getThemeVal('light-font'), 23%);
+                    color: --font-color;
                     pointer-events: none;
                 }
             }
 
             &--first-right {
                 @extend .nav-list__item;
+                cursor: pointer;
                 position: absolute;
                 right: 160px;
             }

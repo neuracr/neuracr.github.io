@@ -5,17 +5,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:  getThemeVal('main-font-family');
-    color: getThemeVal('font');
+    font-family:  var(--main-font-family);
+    color: var(--font-color);
     list-style-type: none;
 }
 
 html {
-    background-color: getThemeVal('background');
+    background-color: var(--background-color);
 }
 
 h1, h2 {
-    font-family: getThemeVal('title-font-family');
+    font-family: var(--title-font-family);
     font-weight: normal;
     margin: 20px;
 }
@@ -24,7 +24,7 @@ h1, h2 {
     display: grid;
     height: 100vh;
     background-attachment: fixed;
-    background-color: getThemeVal('background');
+    background-color: var(--background-color);
     grid-template-columns: $grid-side-column-width $grid-middle-column-width $grid-side-column-width;
     grid-template-rows: auto auto 1fr $grid-footer-row-height;
     grid-template-areas: 
@@ -35,16 +35,16 @@ h1, h2 {
 
     &__title {
         grid-area: sitetitle;
-        background-color: getThemeVal('background');
+        background-color: var(--background-color);
         text-align: center;
-        font-family: getThemeVal('title-font-family');
+        font-family: var(--title-font-family);
         font-size: 60px;
-        color: getThemeVal('accent');
+        color: var(--accent-color);
     }
 
     &__content {
         grid-area: content;
-        background-color: getThemeVal('background');
+        background-color: var(--background-color);
     }
 
     &__footer {

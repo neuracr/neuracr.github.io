@@ -1,10 +1,10 @@
 %primary-bg-light-color {
-    background-color: getThemeVal('primary');
-    color: getThemeVal('light-font');
+    background-color: var(--primary-color);
+    color: var(--light-font-color);
 }
 
 %dark-bg-light-color {
-    background-color: getThemeVal('dark-background');
-    color: getThemeVal('light-font');
+    background-color: var(--dark-background-color);
+    color: var(--light-font-color);
     font-weight: bold;
 }
