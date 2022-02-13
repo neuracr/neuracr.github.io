@@ -2,14 +2,15 @@
 layout: base
 ---
 
-<h1>Latest posts</h2>
-<ul id="latest-recipes">
+<h1>Latest posts</h1>
+<ul class="latest-recipes">
     {% for post in site.posts %}
     <li>
         <div class="recipe-preview-tile">
-            <a href="{{post.url}}"><img src="{{post.preview_picture}}" alt="recipe tile preview picture">
-            <div class="tile-title-shadow">{{post.title}}</div>
-            <div class="tile-title">{{post.title}}</div>
+            <a href="{{post.url}}">
+                <img src="{{post.preview_picture}}" alt="recipe tile preview picture" class="image">
+                <div class="recipe-preview-tile__title-shadow">{{post.title}}</div>
+                <div class="recipe-preview-tile__title">{{post.title}}</div>
             </a>
         </div>
     </li>

@@ -1,0 +1,9 @@
+.anchor {
+    color: var(--light-font-color);
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration-color: var(--font-color);
+        color: var(--font-color);
+    }
+}

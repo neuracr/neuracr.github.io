@@ -4,26 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/generated/css/style.css">
   <script type="module" src="{{site.baseurl}}/js/app.js"></script>
+  <script type="text/javascript" src="{{site.baseurl}}/js/theme.js"></script>
 </head>
 
 <body>
-  <div class="maincontainer">
-    <div id="sitetitle">{{site.title}}</div>
-    <nav>
-      <ul id="navlinks">
-        <li class="nav-item"><a href="/">Home</a></li>
-        <li class="nav-item"><a href="/recipes/">Recipes</a></li>
-        <li class="nav-item"><a href="/about">About</a></li>
+  <div class="main">
+    <div class="main__title">{{site.title}}</div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="/">Home</a></li>
+        <li class="nav-list__item--disabled"><a href="/recipes/">Recipes</a></li>
+        <li class="nav-list__item"><a href="/about">About</a></li>
+        <li class="nav-list__item--first-right" onclick="switchTheme()"><a>Theme</a></li>
+        <li class="nav-list__item--disabled nav-list__item--second-right"><a>Language</a></li>
       </ul>
     </nav>
     <!-- TODO CHANGE THAT-->
-    <div id="leftmargin"></div>
-    <div id="content">{{content}}</div>
-    <div id="rightmargin"></div>
-    <footer>
-      &copy; to me
+    <div class="main__content">{{content}}</div>
+    <footer class="main__footer">
+      &copy; 
+      <u><a class="anchor" href="https://github.com/neuracr">neuracr</a></u>
+      &amp;
+      <u><a class="anchor" href="https://github.com/Hsb511">Hsb511</a></u>
     </footer>
   </div>
 </body>

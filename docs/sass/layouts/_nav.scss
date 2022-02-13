@@ -1,0 +1,48 @@
+.nav {
+    grid-area: nav;
+    @extend %primary-bg-light-color;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+    .nav-list {
+        list-style: none;
+
+        &__item {
+            display: inline-block;
+            padding: 0px 20px;
+
+            &--disabled {
+                @extend .nav-list__item;
+                a {
+                    color: --font-color;
+                    filter: brightness(0.77);
+                    pointer-events: none;
+                }
+            }
+
+            &--first-right {
+                @extend .nav-list__item;
+                cursor: pointer;
+                position: absolute;
+                right: 160px;
+            }
+
+            &--second-right {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+    a {
+        @extend .anchor;
+        font-size: 25px;
+        font-weight: 800;
+        transition: text-decoration-color 300ms, color 200ms;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+

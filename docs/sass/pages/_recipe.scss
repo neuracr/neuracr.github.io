@@ -1,0 +1,25 @@
+.recipe {
+    &__main-picture {
+        display: block;
+    }
+
+    &__ingredients {
+        padding: 15px;
+        margin: 10px;
+        background-color: var(--accent-color);
+        border-radius: 50px;
+    }
+
+    &__instructions {
+        padding-bottom: 50px;
+
+        ol {
+            padding: 20px;
+
+            li {
+                list-style-type: numbers;
+                padding-bottom: 10px; 
+            }
+        }
+    }
+}

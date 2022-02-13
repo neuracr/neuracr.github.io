@@ -1,0 +1,10 @@
+%primary-bg-light-color {
+    background-color: var(--primary-color);
+    color: var(--light-font-color);
+}
+
+%dark-bg-light-color {
+    background-color: var(--dark-background-color);
+    color: var(--light-font-color);
+    font-weight: bold;
+}

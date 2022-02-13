@@ -1,0 +1,12 @@
+.tag-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &__element {
+        @extend %dark-bg-light-color;
+        display: inline-block;
+        margin: 5px;
+        padding: 8px 6px;
+        border-radius: 8%;
+    }
+}

@@ -82,12 +82,12 @@ export class IngredientList extends LitElement {
 
     render() {   
         return html`
-        <label for="servinginput">Nb of servings</label>
+        <label for="servinginput">Number of servings</label>
         <button  @click=${this.removeServings}>-</button>
         <input type="number" @input=${this.updateServings} id="servinginput" value=${this.servingNumber}>
         <button @click=${this.addServings}>+</button>        
         <ul>
-        <slot id="ingredientslot"></slot>
+            <slot id="ingredientslot"></slot>
         </ul>
         `
     }
