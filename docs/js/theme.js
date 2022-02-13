@@ -18,7 +18,7 @@ function setTheme(themePosition) {
 
 function switchTheme() {
     const currentThemeStr = localStorage.getItem('currentTheme');
-    var currentTheme = 0;
+    const nextTheme = !isNaN(currentThemeStr) ? (parseInt(currentThemeStr) + 1) % themesList.length : 0;
     if (!isNaN(currentThemeStr)) {
         currentTheme = parseInt(currentThemeStr);
     }
