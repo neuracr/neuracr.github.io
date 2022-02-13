@@ -23,12 +23,7 @@ function switchTheme() {
         currentTheme = parseInt(currentThemeStr);
     }
     
-    setTheme(currentTheme + 1);
+    setTheme(nextTheme);
 
-    if (currentTheme < themesList.length) {
-        currentTheme = currentTheme + 1;
-    } else {
-        currentTheme = 0;
-    }
-    localStorage.setItem('currentTheme', currentTheme);
+    localStorage.setItem('currentTheme', nextTheme);
 }
