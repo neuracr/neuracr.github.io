@@ -4,6 +4,7 @@
     padding: 0;
     font-family:  var(--main-font-family);
     color: var(--font-color);
+    @include font-size($font-size-text);
     list-style-type: none;
 }
 
@@ -14,7 +15,15 @@ html {
 h1, h2 {
     font-family: var(--title-font-family);
     font-weight: normal;
-    margin: 20px;
+    margin: 20px 0px;
+}
+
+h1 {
+    @include font-size($font-size-title);
+}
+
+h2 {
+    @include font-size($font-size-subtitle);
 }
 
 .main {
@@ -23,6 +32,10 @@ h1, h2 {
     background-attachment: fixed;
     background-color: var(--background-color);
     grid-template-columns: $grid-side-column-width $grid-middle-column-width $grid-side-column-width;
+    
+    @media (max-width: 1000px) and (orientation: portrait) {
+        grid-template-columns: $grid-side-column-width $grid-middle-column-width-mobile $grid-side-column-width;
+    }
     grid-template-rows: auto auto 1fr $grid-footer-row-height;
     grid-template-areas: 
        "sitetitle sitetitle sitetitle"
@@ -35,7 +48,7 @@ h1, h2 {
         background-color: var(--background-color);
         text-align: center;
         font-family: var(--title-font-family);
-        font-size: 60px;
+        @include font-size($font-size-main-title, 1);
         color: var(--accent-color);
     }
 
@@ -48,8 +61,8 @@ h1, h2 {
         grid-area: footer;
         @extend %primary-bg-light-color;
         line-height: $grid-footer-row-height;
-        font-size: $font-footer-size;
-        padding-left: ($grid-footer-row-height - $font-footer-size)/2;
+        @include font-size($font-size-text);
+        padding-left: ($grid-footer-row-height - $font-size-text)/2;
 
     }
 }

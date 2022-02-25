@@ -1,0 +1,7 @@
+@mixin font-size($font-size, $multiplicator: 2.3) {
+    font-size: $font-size;
+
+    @media (max-width: 1000px) and (orientation: portrait) {
+        font-size: $font-size * $multiplicator;
+    }
+}

@@ -1,5 +1,12 @@
+$grid-column-amount: 3;
+$grid-column-amount-mobile: 1;
 $grid-side-column-width: 1fr;
-$grid-middle-column-width: 800px;
-
+$grid-middle-column-width: $grid-column-amount * 400px;
+$grid-middle-column-width-mobile: 800px;
 $grid-footer-row-height: 60px;
-$font-footer-size: 15px;
+
+$font-size-text: 16px;
+$font-size-nav: 25px;
+$font-size-subtitle: 25px;
+$font-size-title: 35px;
+$font-size-main-title: 60px;
