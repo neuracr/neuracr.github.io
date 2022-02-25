@@ -38,7 +38,7 @@
 
     a {
         @extend .anchor;
-        font-size: 25px;
+        @include font-size($font-size-nav, 1.5);
         font-weight: 800;
         transition: text-decoration-color 300ms, color 200ms;
         padding-left: 20px;

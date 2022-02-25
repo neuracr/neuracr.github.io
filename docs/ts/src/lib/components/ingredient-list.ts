@@ -53,6 +53,7 @@ export class IngredientList extends LitElement {
         }})
     servingNumber = 5;
 
+    // TODO CHANGE THAT ! 
     static styles = css`
         label {
             margin: 0 60px;
@@ -64,7 +65,7 @@ export class IngredientList extends LitElement {
 
         button, #servinginput {
             border: none;
-            font-size: 16px;
+            font-size: 18px;
             text-align:center;
             outline: none;
         }
