@@ -32,6 +32,10 @@ h2 {
     background-attachment: fixed;
     background-color: var(--background-color);
     grid-template-columns: $grid-side-column-width $grid-middle-column-width $grid-side-column-width;
+    
+    @media (max-width: 1000px) and (orientation: portrait) {
+        grid-template-columns: $grid-side-column-width $grid-middle-column-width-mobile $grid-side-column-width;
+    }
     grid-template-rows: auto auto 1fr $grid-footer-row-height;
     grid-template-areas: 
        "sitetitle sitetitle sitetitle"

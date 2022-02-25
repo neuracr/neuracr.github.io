@@ -1,10 +1,10 @@
 .latest-recipes {
     column-gap: 0px;
     display: inline-block;
-    columns: 2; 
+    columns: $grid-column-amount; 
     
     @media (max-width: 1000px) and (orientation: portrait) {
-        columns: 1;
+        columns: $grid-column-amount-mobile;
     }
 }
 
