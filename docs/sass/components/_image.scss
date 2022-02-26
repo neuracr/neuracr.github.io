@@ -2,3 +2,13 @@
     max-height:100%; 
     max-width:100%;
 }
+
+.logo {
+    max-height: $nav-logo-size;
+    max-width: $nav-logo-size;
+
+    @media (max-width: 1000px) and (orientation: portrait) {
+        max-height: $nav-multiplicator * $nav-logo-size;
+        max-width: $nav-multiplicator * $nav-logo-size;
+    }
+}

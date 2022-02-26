@@ -13,6 +13,12 @@
             display: inline-block;
             padding: 0px 20px;
 
+            &--left {
+                @extend .nav-list__item;
+                position: absolute;
+                left: -30px;
+            }
+
             &--disabled {
                 @extend .nav-list__item;
                 a {
@@ -34,11 +40,24 @@
                 right: 0;
             }
         }
+
+        &__title {
+            @include font-size($font-size-nav, $nav-multiplicator);
+            color: var(--light-font-color);
+            text-decoration: none;
+            font-weight: 800;
+            position: absolute;
+            left: 30px;
+
+            @media (max-width: 1000px) and (orientation: portrait) {
+                display: none;
+            }
+        }
     }
 
     a {
         @extend .anchor;
-        @include font-size($font-size-nav, 1.5);
+        @include font-size($font-size-nav, $nav-multiplicator);
         font-weight: 800;
         transition: text-decoration-color 300ms, color 200ms;
         padding-left: 20px;

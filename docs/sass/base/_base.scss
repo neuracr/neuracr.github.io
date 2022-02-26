@@ -43,15 +43,6 @@ h2 {
        "leftmargin content rightmargin"
        "footer footer footer";
 
-    &__title {
-        grid-area: sitetitle;
-        background-color: var(--background-color);
-        text-align: center;
-        font-family: var(--title-font-family);
-        @include font-size($font-size-main-title, 1);
-        color: var(--accent-color);
-    }
-
     &__content {
         grid-area: content;
         background-color: var(--background-color);
