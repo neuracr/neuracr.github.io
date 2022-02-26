@@ -18,8 +18,15 @@
         <li class="nav-list__item"><a href="/">Home</a></li>
         <li class="nav-list__item--disabled"><a href="/recipes/">Recipes</a></li>
         <li class="nav-list__item"><a href="/about">About</a></li>
-        <li class="nav-list__item--first-right" onclick="switchTheme()"><a>Theme</a></li>
-        <li class="nav-list__item--disabled nav-list__item--second-right"><a>Language</a></li>
+        <li class="nav-list__item--right" ><a href="#menu"><img src="/assets/icons/burger_icon_white.svg" alt="settings" class="logo"></a></li>
+        <div id="menu" class="menu">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item--right nav-list__item--close" ><a href="#"><img src="/assets/icons/close_icon_white.svg" alt="settings" class="logo"></a></li>
+            </ul>
+          </nav>
+          <div class="menu__item" onclick="switchTheme()">Theme</div>
+          <div class="menu__item--disabled menu__item--last">Language</div>
       </ul>
     </nav>
     <!-- TODO CHANGE THAT-->

@@ -28,16 +28,15 @@
                 }
             }
 
-            &--first-right {
-                @extend .nav-list__item;
+            &--right {
+                display: inline-block;
                 cursor: pointer;
                 position: absolute;
-                right: 160px;
-            }
-
-            &--second-right {
-                position: absolute;
                 right: 0;
+            }
+            
+            &--close {
+                top: 10px;
             }
         }
 
