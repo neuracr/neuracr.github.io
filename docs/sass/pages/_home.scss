@@ -2,6 +2,10 @@
     column-gap: 0px;
     display: inline-block;
     columns: $grid-column-amount; 
+
+    @media (max-width: 1400px)  {
+        columns: $grid-column-amount-small; 
+    }
     
     @media (max-width: 1000px) and (orientation: portrait) {
         columns: $grid-column-amount-mobile;

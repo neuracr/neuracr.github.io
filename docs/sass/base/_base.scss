@@ -33,6 +33,10 @@ h2 {
     background-color: var(--background-color);
     grid-template-columns: $grid-side-column-width $grid-middle-column-width $grid-side-column-width;
     
+    @media (max-width: 1400px) {
+        grid-template-columns: $grid-side-column-width $grid-middle-column-width-mobile $grid-side-column-width;
+    }
+
     @media (max-width: 1000px) and (orientation: portrait) {
         grid-template-columns: $grid-side-column-width $grid-middle-column-width-mobile $grid-side-column-width;
     }
