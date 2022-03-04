@@ -65,9 +65,13 @@ export class IngredientList extends LitElement {
 
         button, #servinginput {
             border: none;
-            font-size: 18px;
+            font-size: 16px;
             text-align:center;
             outline: none;
+        }
+
+        #servinginput {
+            width: 50px;
         }
 
         #servinginput::-webkit-outer-spin-button,
@@ -85,7 +89,7 @@ export class IngredientList extends LitElement {
         return html`
         <label for="servinginput">Number of servings</label>
         <button  @click=${this.removeServings}>-</button>
-        <input type="number" @input=${this.updateServings} id="servinginput" value=${this.servingNumber}>
+        <input type="number" @input=${this.updateServings} id="servinginput" value=${this.servingNumber} max="23">
         <button @click=${this.addServings}>+</button>        
         <ul>
             <slot id="ingredientslot"></slot>
@@ -120,7 +124,7 @@ export class IngredientList extends LitElement {
     }
 
     addServings() {
-        if (Number.isNaN(parseInt(this.input.value))) { 
+        if (Number.isNaN(parseInt(this.input.value)) || parseInt(this.input.value) >= 23) { 
             return;
         }
 
