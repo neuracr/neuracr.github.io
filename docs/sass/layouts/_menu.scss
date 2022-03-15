@@ -1,0 +1,41 @@
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $nav-menu-width;
+
+    .nav {
+        height: 50px;
+
+        @media (max-width: 1000px) and (orientation: portrait) {
+            height: 65px;
+        }
+    }
+
+    &__item {
+        @extend %primary-bg-light-color;
+        @include font-size($font-size-nav, $nav-multiplicator);
+        padding: 10px 20px;
+        font-weight: 800;
+
+        &--disabled {
+            @extend .menu__item;
+            color: --font-color;
+            filter: brightness(0.77);
+            pointer-events: none;
+        }
+
+        &--last {
+            border-radius: 0 0 0 10px;
+        }
+
+        &:hover {
+            filter: brightness(1.23);
+            cursor: pointer;
+        }
+    }
+}
+
+#menu:not(:target) {
+    display: none;
+}

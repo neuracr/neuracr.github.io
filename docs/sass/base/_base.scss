@@ -33,6 +33,10 @@ h2 {
     background-color: var(--background-color);
     grid-template-columns: $grid-side-column-width $grid-middle-column-width $grid-side-column-width;
     
+    @media (max-width: 1400px) {
+        grid-template-columns: $grid-side-column-width $grid-middle-column-width-mobile $grid-side-column-width;
+    }
+
     @media (max-width: 1000px) and (orientation: portrait) {
         grid-template-columns: $grid-side-column-width $grid-middle-column-width-mobile $grid-side-column-width;
     }
@@ -42,15 +46,6 @@ h2 {
        "nav nav nav"
        "leftmargin content rightmargin"
        "footer footer footer";
-
-    &__title {
-        grid-area: sitetitle;
-        background-color: var(--background-color);
-        text-align: center;
-        font-family: var(--title-font-family);
-        @include font-size($font-size-main-title, 1);
-        color: var(--accent-color);
-    }
 
     &__content {
         grid-area: content;
